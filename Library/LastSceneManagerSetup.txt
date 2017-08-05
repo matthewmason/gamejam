@@ -2,6 +2,15 @@ sceneSetups:
 - path: Assets/2d Scene.unity
   isLoaded: 0
   isActive: 0
+- path: Assets/dusk.unity
+  isLoaded: 0
+  isActive: 0
 - path: Assets/daytime.unity
   isLoaded: 1
   isActive: 1
+- path: Assets/Night time.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/underground.unity
+  isLoaded: 0
+  isActive: 0
