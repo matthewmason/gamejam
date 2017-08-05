@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DF1E6A21-BE07-1727-BBB1-F17B8FFB1529}</ProjectGuid>
+    <ProjectGuid>{C55DB3BF-F4C2-CC01-720A-52E1A518B1A5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -58,6 +58,7 @@
      <Compile Include="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Respawn.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Restarter.cs" />
+     <Compile Include="Assets\Standard Assets\2D\Scripts\SceneController.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
@@ -95,7 +96,7 @@
      <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>/Users/matthew.mason/gamejam/gamejam/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>/Users/Shared/Unity/Man vs Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
