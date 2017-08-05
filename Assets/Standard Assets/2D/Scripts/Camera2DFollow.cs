@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace UnityStandardAssets._2D
 {
+	[RequireComponent(typeof (SceneController))]
     public class Camera2DFollow : MonoBehaviour
     {
         public Transform target;
@@ -16,12 +17,15 @@ namespace UnityStandardAssets._2D
         private Vector3 m_CurrentVelocity;
         private Vector3 m_LookAheadPos;
 
+		private SceneController m_SceneController;
+
         // Use this for initialization
         private void Start()
         {
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
+			m_SceneController = GetComponent<SceneController> ();
         }
 			
         // Update is called once per frame
@@ -49,6 +53,10 @@ namespace UnityStandardAssets._2D
             transform.position = newPos;
 
             m_LastTargetPosition = target.position;
+				
+			int distance = (int)6.39 + (int)target.position.x;
+
+			m_SceneController.setCount(distance);
         }
     }
 }

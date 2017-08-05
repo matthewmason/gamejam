@@ -15,10 +15,8 @@ public class SceneController : MonoBehaviour {
 		SetCountText();
 	}
 
-	private void Update()
+	public void setCount(int newPos)
 	{
-		int newPos = (int)6.39 + (int)player.position.x;
-
 		if (count <= newPos) {
 			count = newPos;
 		}
