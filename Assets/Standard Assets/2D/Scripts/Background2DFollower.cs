@@ -8,7 +8,7 @@ public class Background2DFollower : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		transform.parent = null;
+//		transform.parent = null;
 	}
 	
 	// Update is called once per frame
