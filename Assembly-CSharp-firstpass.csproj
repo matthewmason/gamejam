@@ -55,6 +55,7 @@
      <Compile Include="Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Collisionkiller.cs" />
+     <Compile Include="Assets\Standard Assets\2D\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Restarter.cs" />
@@ -95,6 +96,7 @@
      <Compile Include="Assets\Standard Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Platform Game Assets\Readme.txt" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/Shared/Unity/Man vs Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
