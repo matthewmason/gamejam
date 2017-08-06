@@ -54,9 +54,9 @@
      <Compile Include="Assets\Standard Assets\2D\Scripts\Background2DFollower.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Standard Assets\2D\Scripts\Collisionkiller.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
-     <Compile Include="Assets\Standard Assets\2D\Scripts\Respawn.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\Restarter.cs" />
      <Compile Include="Assets\Standard Assets\2D\Scripts\SceneController.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />

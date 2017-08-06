@@ -22,10 +22,13 @@ namespace UnityStandardAssets._2D
         // Use this for initialization
         private void Start()
         {
+			m_SceneController = Camera.main.GetComponent<SceneController> ();
+
+			target = m_SceneController.getPlayer ();
+
             m_LastTargetPosition = target.position;
             m_OffsetZ = (transform.position - target.position).z;
             transform.parent = null;
-			m_SceneController = GetComponent<SceneController> ();
         }
 			
         // Update is called once per frame
@@ -57,6 +60,10 @@ namespace UnityStandardAssets._2D
 			int distance = (int)6.39 + (int)target.position.x;
 
 			m_SceneController.setCount(distance);
+
+			if (target.transform.position.y < m_SceneController.threshold) {
+				m_SceneController.respawn ();
+			}
         }
     }
 }

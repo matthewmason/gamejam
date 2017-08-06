@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace UnityStandardAssets._2D
 {
+	[RequireComponent(typeof (SceneController))]
     public class PlatformerCharacter2D : MonoBehaviour
     {
         [SerializeField] private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
@@ -20,8 +21,12 @@ namespace UnityStandardAssets._2D
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
+		private SceneController m_SceneController;
+
         private void Awake()
         {
+			m_SceneController = Camera.main.GetComponent<SceneController> ();
+
             // Setting up references.
             m_GroundCheck = transform.Find("GroundCheck");
             m_CeilingCheck = transform.Find("CeilingCheck");
@@ -110,5 +115,13 @@ namespace UnityStandardAssets._2D
             theScale.x *= -1;
             transform.localScale = theScale;
         }
+
+		private void OnCollisionEnter2D(Collision2D collision)
+		{
+			if(collision.gameObject.tag == "Killer" )
+			{
+				m_SceneController.respawn ();
+			}
+		}
     }
 }

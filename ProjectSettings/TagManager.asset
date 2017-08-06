@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Killer
   layers:
   - Default
   - TransparentFX
@@ -40,16 +41,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 1
+    locked: 0
   - name: Background
     uniqueID: 2646747639
-    locked: 1
+    locked: 0
   - name: Background Detail
     uniqueID: 2127382753
-    locked: 1
+    locked: 0
+  - name: Background Fine Detail
+    uniqueID: 2610533095
+    locked: 0
   - name: Player
     uniqueID: 1401091347
-    locked: 1
+    locked: 0
   - name: UI
     uniqueID: 3585482269
-    locked: 1
+    locked: 0
