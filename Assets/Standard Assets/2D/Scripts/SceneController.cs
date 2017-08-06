@@ -4,10 +4,12 @@ using System.Collections;
 
 public class SceneController : MonoBehaviour {
 
+	private AudioSource audioSource;
 	public Text countText;
 	public float paranoia;
 	public Transform player;
 	public float threshold = -30f;
+	public float x_threshold = 360f;
 
 	private int count;
 
@@ -16,6 +18,7 @@ public class SceneController : MonoBehaviour {
 		count = 0;
 		paranoia = 1f;
 		SetCountText();
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	public void setCount(int newPos)
@@ -43,7 +46,13 @@ public class SceneController : MonoBehaviour {
 		if (paranoia >= 6f) {
 			print ("Respawning");
 			respawn ();
+		} else {
+			updatePitch ();
 		}
+	}
+
+	public void updatePitch(){
+		// audioSource.pitch = (float) (1 + (paranoia - 1) * 0.2);
 	}
 
 	public void decrementParanoia(float amt)
@@ -51,6 +60,8 @@ public class SceneController : MonoBehaviour {
 		if (paranoia > 1f) {
 			paranoia -= amt;
 		}
+
+		updatePitch ();
 	}
 
 	public float getParanoia()
@@ -74,6 +85,7 @@ public class SceneController : MonoBehaviour {
 
 		resetParanoia ();
 		resetCount ();
+		updatePitch ();
 	}
 
 	public float getThreshold() 
