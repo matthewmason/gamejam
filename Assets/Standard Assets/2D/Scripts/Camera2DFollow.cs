@@ -64,6 +64,11 @@ namespace UnityStandardAssets._2D
 			if (target.transform.position.y < m_SceneController.threshold) {
 				m_SceneController.respawn ();
 			}
+
+			if (target.transform.position.x > m_SceneController.x_threshold) {
+				// YOU WIN!
+				m_SceneController.respawn();
+			}
         }
     }
 }
