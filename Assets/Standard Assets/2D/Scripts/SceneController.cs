@@ -29,12 +29,21 @@ public class SceneController : MonoBehaviour {
 
 	private void SetCountText ()
 	{
-		countText.text = "Score: " + count.ToString () + "\nParanoia multiplier :" + paranoia.ToString();
+		string paranoiaValue = ((paranoia - 1) / 5 * 100).ToString("F0");
+		countText.text = "Score: " + count.ToString () + ", Paranoia: " + paranoiaValue + "%";
 	}
 
 	public void incrementParanoia(float amt)
 	{
-		paranoia += amt;
+		if (paranoia < 6f) {
+			paranoia += amt;
+			print (paranoia);
+		}
+
+		if (paranoia >= 6f) {
+			print ("Respawning");
+			respawn ();
+		}
 	}
 
 	public void decrementParanoia(float amt)
