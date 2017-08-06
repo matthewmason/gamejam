@@ -29,7 +29,7 @@ public class EnemyAI : MonoBehaviour {
 		}
 
 		//Move Towards Target
-		myTransform.position += myTransform.position * moveSpeed * Time.deltaTime;
+		myTransform.position += (target.position - myTransform.position).normalized * moveSpeed * Time.deltaTime;
 
 	}
 

@@ -1397,7 +1397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606809945}
-  moveSpeed: 0.1
+  moveSpeed: 0.3
   rotationSpeed: 0
 --- !u!50 &195231752
 Rigidbody2D:
@@ -2098,7 +2098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606809945}
-  moveSpeed: 0.1
+  moveSpeed: 0.3
   rotationSpeed: 0
 --- !u!50 &242092357
 Rigidbody2D:
@@ -2302,7 +2302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606809945}
-  moveSpeed: 0.1
+  moveSpeed: 0.3
   rotationSpeed: 0
 --- !u!50 &276721279
 Rigidbody2D:
@@ -5101,7 +5101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606809945}
-  moveSpeed: 0.1
+  moveSpeed: 0.3
   rotationSpeed: 0
 --- !u!50 &715724531
 Rigidbody2D:
@@ -7608,7 +7608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606809945}
-  moveSpeed: 0.1
+  moveSpeed: 0.3
   rotationSpeed: 0
 --- !u!50 &1024772703
 Rigidbody2D:
@@ -8509,7 +8509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606809945}
-  moveSpeed: 0.1
+  moveSpeed: 0.3
   rotationSpeed: 0
 --- !u!50 &1143986252
 Rigidbody2D:
@@ -10134,7 +10134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606809945}
-  moveSpeed: 0.1
+  moveSpeed: 0.3
   rotationSpeed: 0
 --- !u!50 &1416835368
 Rigidbody2D:
@@ -14417,7 +14417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1606809945}
-  moveSpeed: 0.1
+  moveSpeed: 0.3
   rotationSpeed: 0
 --- !u!1 &1997843999
 GameObject:
